@@ -652,6 +652,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 **[Back to top](#table-of-contents)**
 
-## License
 
-[MIT](https://raw.githubusercontent.com/borisding/universsr/master/LICENSE)
