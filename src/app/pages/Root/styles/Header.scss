@@ -1,0 +1,48 @@
+@import '@common/styles/variables';
+
+header {
+  background-color: lighten($color-black, 10%);
+  color: $color-white;
+  display: block;
+  height: $header-height;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu {
+  .active,
+  %active {
+    background-color: lighten($color-black, 25%);
+    text-decoration: underline;
+  }
+
+  ul {
+    height: $header-height;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+  }
+
+  li > a {
+    color: $color-white;
+    display: inline-block;
+    height: $header-height;
+    line-height: $header-height;
+    min-width: 60px;
+    padding: 0 $base-padding;
+    text-decoration: none;
+  }
+
+  li > a:hover {
+    @extend %active;
+  }
+}

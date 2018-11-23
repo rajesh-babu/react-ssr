@@ -1,0 +1,13 @@
+@import '@common/styles/variables';
+
+.todo-input {
+  border: 2px solid #ccc;
+  font-weight: 400;
+  margin-bottom: $base-margin;
+  padding: $base-padding / 2;
+}
+
+.error-input {
+  border-color: #ec0225;
+  outline: none;
+}
