@@ -1,29 +1,7 @@
 <h1>React SSR with CMS</h1>
 
-In short, **universsr** is a server-rendered React app starter kit for universal JavaScript web development.
+It is a server-rendered React app starter kit for universal JavaScript web development.
 It also uses Redux library for application state management and the back-end is powered by Node.js Express web framework.
-
-> ✨ The name - "universsr" is combination of _universal_ and _server-side rendering_ acronym.
-
-## Table of Contents
-
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Directory Structure](#directory-structure)
-- [Aliases for Modules](#aliases-for-modules)
-- [NPM Scripts](#npm-scripts)
-- [Project Configuration and Utilities](#project-configuration-and-utilities)
-- [App and API Routes](#app-and-api-routes)
-- [CSS, SCSS and CSS Modules](#css-scss-and-css-modules)
-- [Babel, Webpack and ESM Loader](#babel-webpack-and-esm-loader)
-- [Express and Redux Middlewares](#express-and-redux-middlewares)
-- [Session, Redux State Management](#session-redux-state-management)
-- [Nodemon, HMR and React Hot Reloading](#nodemon-hmr-and-react-hot-reloading)
-- [Lint Checks and Formatting](#lint-checks-and-formatting)
-- [Unit Testing](#unit-testing)
-- [Deployment](#deployment)
-- [Changelog](#changelog)
-- [License](#license)
 
 ## Features
 
@@ -103,65 +81,6 @@ npm test
 
 **[Back to top](#table-of-contents)**
 
-## Directory Structure
-
-Below is overview of project folder structure in this starter along with the short descriptions, respectively:
-
-```
-|--
-    |-- .babelrc                        # default babel configuration object
-    |-- package.json                    # lists required dependencies, scripts, config, etc
-    |-- api.js                          # api entry to expose api server
-    |-- app.js                          # app entry to expose app server
-    |-- esm.js                          # ESM loader and module alias hook
-        ...
-    |-- bin                             # node server files of app and api
-    |-- build                           # parent directory of scripts/webpack
-    |   |-- scripts                     # build scripts for tooling purposes
-    |   |-- webpack                     # webpack config for both client & server
-    |   |-- serverRenderer.js           # built from `server.js` as server renderer for production
-    |-- config                          # app level configuration (.env/syspath, etc)
-    |-- logs                            # log files of the app
-    |-- node_modules                    # installed dependencies of the app
-    |-- public                          # production built assets (icons/images/views, etc)
-    |-- resources                       # parent directory of resources (views/logs/fixtures, etc)
-    |   |-- assets                      # parent directory of all assets
-    |   |   |-- manifest.json           # manifest JSON file for web app
-    |   |   |-- icons                   # source files of icon
-    |   |   |-- images                  # source files of image
-    |   |-- fixtures                    # fixture data for development
-    |   |-- mocks                       # file & style mocks for jest
-    |   |-- views                       # source files of view template
-    |-- sessions                        # default directory for session file storage
-    |-- src                             # parent directory of both api & app source code
-        |-- api                         # parent directory of api source code
-        |   |-- routers                 # respective Express routes for API
-        |   |-- index.js                # api server index entry file
-        |-- app                         # parent directory of app source code
-        |   |-- client.js               # app rendering and webpack's client entry
-        |   |-- index.js                # app server index entry file
-        |   |-- offline.js              # offline plugin registration and event handlers
-        |   |-- routes.js               # static React routes configuration
-        |   |-- server.js               # server renderer for app string & initial state
-        |   |-- common                  # reusable React components & styles
-        |   |   |-- components          # reusable React components for common usage
-        |   |   |-- styles              # reusable CSS/SCSS for the app
-        |   |   |-- actions.js          # common actions for the app
-        |   |   |-- configureStore.js   # redux middleware registration & store creation
-        |   |   |-- rootReducer.js      # root reducer creation for the app
-        |   |   |-- types.js            # common action types for the app
-        |   |-- pages                   # page components based on "modules"
-        |       |-- Home                # `Home` page related (index.js/styles/tests, etc)
-        |       |-- NotFound            # NotFound component for page (index.js/styles/tests, etc)
-        |       |-- Root                # Root component for page layout (index.js/styles/tests, etc)
-        |       |-- Todos               # `Todos` demo page related (index.js/styles/tests, etc)
-        |       |-- index.js            # respective exported page components from entry
-        |       |-- loadComponent.js    # dynamic import util to load page components
-        |-- middlewares                 # all middlewares used for the app
-        |   |-- express                 # middlewares for Express framework
-        |   |-- redux                   # middlewares for Redux library
-        |-- utils                       # utilities used for both client & server
-```
 
 This project structure is organized by having feature-first approach in mind. Thus, for any new features (the page), try to keep it as feature-based folder in `./src/app/pages`. Things in common such as common styles or components can be kept in `./src/app/common` directory.
 
@@ -656,6 +575,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 **[Back to top](#table-of-contents)**
 
-## License
 
-[MIT](https://raw.githubusercontent.com/borisding/universsr/master/LICENSE)
