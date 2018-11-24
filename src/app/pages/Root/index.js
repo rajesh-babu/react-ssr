@@ -9,7 +9,6 @@ import './styles/Root.scss';
 
 const Root = props => (
   <div styleName="container">
-    <Header {...props} />
     <Body {...props} />
   </div>
 );
@@ -18,3 +17,4 @@ export default compose(
   withRouter,
   connect(state => ({ isClient: state.isClient }))
 )(Root);
+//<Header {...props} /> 

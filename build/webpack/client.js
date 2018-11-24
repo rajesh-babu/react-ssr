@@ -77,6 +77,10 @@ module.exports = {
       {
         from: `${SYSPATH['RESOURCES']}/assets/icons`,
         to: `${SYSPATH['PUBLIC']}/icons`
+      },
+      {
+        from: `${SYSPATH['RESOURCES']}/assets/images`,
+        to: `${SYSPATH['PUBLIC']}/images`
       }
     ])
   ].concat(

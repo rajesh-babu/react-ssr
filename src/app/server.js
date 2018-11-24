@@ -18,8 +18,13 @@ function prefetchBranchData(store, req) {
     const promises = branch.map(({ route, match }) => {
       const { loadData } = route;
       const { dispatch } = store;
+      console.log("req.url->"+req.url);
+      //console.log("match->"+match);
+     // console.log("match.isExact->"+match.isExact);
+      //console.log("loadData->"+loadData);
 
       if (match && match.isExact && loadData) {
+        //console.log("Array.isArray->"+Array.isArray(loadData));
         if (Array.isArray(loadData)) {
           return Promise.all(
             loadData.map(action => dispatch(action(match, req)))

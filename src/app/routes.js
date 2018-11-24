@@ -1,11 +1,13 @@
 import Root, { NotFound, Home, Todos } from '@pages';
 import { prefetchTodos } from '@pages/Todos/actions';
+import { prefetchCMSData } from '@pages/Home/actions';
 
 export const routes = [
   {
-    path: '/',
+    path: '/*',
     exact: true,
     menu: 'Home',
+    loadData: prefetchCMSData,
     component: Home
   },
   {
@@ -14,11 +16,8 @@ export const routes = [
     menu: 'Todos',
     loadData: prefetchTodos,
     component: Todos
-  },
-  {
-    path: '/*',
-    component: NotFound
   }
+
 ];
 
 export default [
@@ -27,3 +26,9 @@ export default [
     routes
   }
 ];
+/*
+  {
+    path: '/*',
+    component: NotFound
+  }
+*/

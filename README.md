@@ -1,6 +1,17 @@
 <h1>universsr</h1>
 
+<p>
+<a href="https://github.com/borisding/universsr"><img src="https://img.shields.io/github/release/borisding/universsr.svg" alt="Release Version"></a>
+<a href="https://raw.githubusercontent.com/borisding/universsr/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+<a href="https://travis-ci.org/borisding/universsr"><img src="https://travis-ci.org/borisding/universsr.svg?branch=master" alt="Travis CI Build"></a>
+<a href="https://david-dm.org/borisding/universsr"><img src="https://david-dm.org/borisding/universsr/status.svg" alt="Dependencies"></a>
+<a href="https://david-dm.org/borisding/universsr?type=dev"><img src="https://david-dm.org/borisding/universsr/dev-status.svg" alt="Dev Dependencies"></a>
+</p>
 
+In short, **universsr** is a server-rendered React app starter kit for universal JavaScript web development.
+It also uses Redux library for application state management and the back-end is powered by Node.js Express web framework.
+
+> ✨ The name - "universsr" is combination of _universal_ and _server-side rendering_ acronym.
 
 ## Table of Contents
 
@@ -55,11 +66,14 @@ Before you proceed, please make sure your machine has met the following requirem
 Then, clone the git repository into your new project folder and install required dependencies by running the command below:
 
 ```bash
+# cloning git repository into `my-project` folder
+git clone --depth=1 https://github.com/borisding/universsr.git my-project
 
 # install project dependencies
 cd my-project && npm install
 ```
 
+> Alternatively, you may also use [`universsr-installer`](https://github.com/borisding/universsr-installer) that utilizes GitHub repository for project installation.
 
 ii) App configuration
 
@@ -652,4 +666,6 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 **[Back to top](#table-of-contents)**
 
+## License
 
+[MIT](https://raw.githubusercontent.com/borisding/universsr/master/LICENSE)

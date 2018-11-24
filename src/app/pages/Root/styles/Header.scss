@@ -25,12 +25,14 @@ header {
     height: $header-height;
     list-style: none;
   }
-
+ 
   li {
     display: inline-block;
     padding: 0;
     text-align: center;
   }
+
+
 
   li > a {
     color: $color-white;

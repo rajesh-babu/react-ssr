@@ -1,3 +1,4 @@
 import todosRouter from './todos';
+import cmsDataRouter from './cmsData'
 
-export default [todosRouter];
+export default [todosRouter, cmsDataRouter];
